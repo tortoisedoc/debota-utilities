@@ -1,0 +1,26 @@
+{
+    "translation_catalog": "settings-system",
+    "entries": [
+        {
+            "path": "system_settings/system/debota_settings",
+            "type": "page",
+            "title": "Quickbar settings",
+            "translation_id": "settings_system-debota-settings",
+            "icon": "image://theme/harbour-debota",
+            "order": 510,
+            "params": {
+                "source": "/usr/share/jolla-settings/pages/debota/mainpage.qml"
+            }
+        },
+        {
+            "path": "system_settings/system/debota_switch",
+            "type": "custom",
+            "translation_id":"settings_system-debota",
+            "icon": "image://theme/harbour-debota",
+            "params": {
+                "source": "/usr/share/jolla-settings/pages/debota/EnableSwitch.qml",
+                "type" : "grid"
+            }
+        }
+    ]
+}

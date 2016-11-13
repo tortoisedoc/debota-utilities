@@ -1,0 +1,13 @@
+[Unit]
+Description=QuickBar autostart
+After=booster-silica-qt5.service dbus.socket voicecall-ui-prestart.service
+Before=simkit-agent.service osupdate-check.service store-client.service booster-browser.service
+Requires=dbus.socket
+
+[Service]
+Type=dbus
+ExecStart=/bin/dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.StartServiceByName string:harbour.debota uint32:0
+BusName=harbour.debota
+
+[Install]
+WantedBy=post-user-session.target

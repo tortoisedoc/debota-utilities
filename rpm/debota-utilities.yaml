@@ -1,0 +1,23 @@
+Name: debota-utilities
+Summary: QuickBar utilities
+Version: 0.4
+Release: 12
+Group: Qt/Qt
+License: LICENSE
+Sources: []
+Description: |
+  QuickBar utilities, including : autostart
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+
+Requires:
+
+Files:
+- '%{_datadir}/dbus-1/services/com.giuliettasw.debota.service'
+- '%{_sysconfdir}/systemd/user/harbour-debota.service'
+#- '/usr/share/jolla-settings/pages/debota/EnableSwitch.qml'
+#- '/usr/share/jolla-settings/pages/debota/mainpage.qml'
+#- '/usr/share/jolla-settings/entries/debota/debota.json'
+PkgBR: []
+

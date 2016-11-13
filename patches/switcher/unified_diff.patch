@@ -1,0 +1,23 @@
+diff -ur original/Switcher.qml patched/Switcher.qml
+--- original/Switcher.qml	2015-02-16 23:32:04.767418326 +0200
++++ patched/Switcher.qml	2015-02-16 23:31:55.037035298 +0200
+@@ -147,7 +147,19 @@
+             }
+         }
+     }
++    DBusInterface{
++      id:qBarDBusSwitchToApp;
++      //busType:DBusInterface.SystemBus
++      destination:"harbour.debota"
++      iface:"harbour.debota"
++      path:"/"
++    
++    }
++
+     function switchToApp(id) {
++ 
++        var window = Lipstick.compositor.windowForId(id)
++ 	qBarDBusSwitchToApp.call('appSwitch',[window.processId])
+         showingWid = id;
+         shuffleAndPeek()
+         appShowTimer.start()

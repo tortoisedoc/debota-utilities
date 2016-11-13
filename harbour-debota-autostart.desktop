@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=no-invoker
+X-Nemo-Single-Instance=yes
+Name=Quickbar
+Icon=harbour-debota
+Exec=harbour-debota -plugin evdevtouch:/dev/input/event0 --dbus

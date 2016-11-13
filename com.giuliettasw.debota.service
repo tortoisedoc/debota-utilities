@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=harbour.debota
+Exec=/usr/bin/harbour-debota -plugin evdevtouch:/dev/touchscreen --dbus
+User=nemo

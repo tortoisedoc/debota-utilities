@@ -1,0 +1,8 @@
+{
+    "name": "Quickbar Switcher patch",
+    "description": "Make Quickbar aware of switches",
+    "category": "other",
+    "infos": {
+        "maintainer": "tortoisedoc"
+    }
+}
